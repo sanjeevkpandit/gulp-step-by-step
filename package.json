@@ -1,0 +1,24 @@
+{
+  "name": "gulp-step-by-step",
+  "version": "0.0.1",
+  "description": "Learn gulp basics",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevkpandit/gulp-step-by-step.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Sanjeev Kumar Pandit <binarysanjeev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjeevkpandit/gulp-step-by-step/issues"
+  },
+  "homepage": "https://github.com/sanjeevkpandit/gulp-step-by-step#readme"
+}
