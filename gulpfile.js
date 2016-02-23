@@ -15,6 +15,12 @@ gulp.task('concat-css', function() {
         .pipe(gulp.dest('public/css/'));
 });
 
+gulp.task('concat-js', function() {
+    return gulp.src('src/js/**/*.js')
+        .pipe(concat('compiled.js'))
+        .pipe(gulp.dest('public/js/'));
+});
+
 // Default task
 gulp.task('default', function() {
 
