@@ -9,9 +9,21 @@ var SCSS_FILES = 'src/sass/**/*.scss';
 var JS_FILES = 'src/js/**/*.js';
 var ES6_FILES = 'src/js/es6/**/*.js';
 
+var errorHandler = function(error) {
+    notify.onError({
+        title: 'Task Failed [' + error.plugin + ']',
+        message: 'Oops! Something went north!',
+        sound: true
+    })(error);
+
+    // Prevent gulp watch from stopping
+    this.emit('end');
+};
+
 gulp.task('sass', function() {
     return gulp.src(SCSS_FILES)
         .pipe(sass())
+        .on('error', errorHandler)
         .pipe(gulp.dest('public/css/'))
         .pipe(notify({
             message: "SCSS completed"
@@ -34,6 +46,7 @@ gulp.task('concat-js', function() {
 gulp.task('es6', function() {
     return gulp.src(ES6_FILES)
         .pipe(babel())
+        .on('error', errorHandler)
         .pipe(gulp.dest('public/js/'))
         .pipe(notify({
             message: "ES6 Compiled"
