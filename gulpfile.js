@@ -48,9 +48,7 @@ gulp.task('minify-js', function() {
 });
 
 // Default task
-gulp.task('default', function() {
-
-});
+gulp.task('default', ['sass', 'es6']);
 
 // Watch files
 gulp.task('watch', function() {
