@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var minify = require('gulp-minify');
 var concat = require('gulp-concat');
 
 gulp.task('sass', function() {
@@ -18,6 +19,13 @@ gulp.task('concat-css', function() {
 gulp.task('concat-js', function() {
     return gulp.src('src/js/**/*.js')
         .pipe(concat('compiled.js'))
+        .pipe(gulp.dest('public/js/'));
+});
+
+gulp.task('minify-js', function() {
+    return gulp.src('src/js/**/*.js')
+        .pipe(concat('compiled.js'))
+        .pipe(minify())
         .pipe(gulp.dest('public/js/'));
 });
 
