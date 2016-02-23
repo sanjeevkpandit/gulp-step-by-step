@@ -1,5 +1,5 @@
 # gulp-step-by-step
-Learn gulp step by step
+Learn basics of gulp step by step.
 
 ###Important gulp functions
 - `gulp.task`: Define a task.
@@ -40,6 +40,8 @@ Run `gulp sass` in terminal and check the files in target folders.
 ####step-3-concat-css
 Combine CSS or compiled SCSS files into one file.
 
+Install gulp-concat.
+
 `npm install gulp-concat --save`
 
 Create `concat-css` task in `gulpfile.js`. Also, create respective target folders.
@@ -49,7 +51,9 @@ Run `gulp concat-css` in terminal and check the files in target folders.
 ####step-4-concat-js
 Combine JS or compiled JS files into one file.
 
-`npm install gulp-concat --save` (already installed above)
+Install gulp-concat (if not installed earlier).
+
+`npm install gulp-concat --save`
 
 Create `concat-js` task in `gulpfile.js`. Also, create respective target folders.
 
@@ -58,7 +62,9 @@ Run `gulp concat-js` in terminal and check the files in target folders.
 ####step-5-minify-js
 Minify a JS file or concatenation of multiple JS files.
 
-`npm install gulp-concat --save` (already installed above)
+Install gulp-concat (if not installed earlier) and gulp-minify.
+
+`npm install gulp-concat --save`
 
 `npm install gulp-minify --save`
 
@@ -68,6 +74,8 @@ Run `gulp minify-js` in terminal and check the files in target folders.
 
 ####step-6-es6
 Convert a EcmaScript6(ES2015) file into JavaScript file using babel.
+
+Install gulp-babel and babel-preset-es2015.
 
 `npm install gulp-babel --save`
 
@@ -79,6 +87,8 @@ Run `gulp es6` in terminal and check the files in target folders.
 
 ####step-7-watch-notify
 Watch files for any change and notify on completion of task. Very useful while working on development.
+
+Install gulp-notify.
 
 `npm install gulp-notify --save`
 
