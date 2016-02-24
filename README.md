@@ -22,6 +22,8 @@ Install gulp.
 
 `npm install gulp --save`
 
+Run `npm install -g gulp` to run the gulp commands globally.
+
 Create `gulpfile.js` and `default` task(blank).
 
 Run `gulp` in terminal to check.
