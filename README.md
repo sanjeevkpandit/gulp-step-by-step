@@ -109,4 +109,13 @@ Create a function `errorHandler` that displays the error notification and doesn'
 ###Notes:
 - Try swapping `minify` and `concat` functions in any of the task.
 
+###Find more on:
+- https://laracasts.com/lessons/gulp-this
+- https://css-tricks.com/gulp-for-beginners/
+- http://www.sitepoint.com/introduction-gulp-js/
+- http://leveluptuts.com/tutorials/learning-gulp
+- https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js
+- https://laracasts.com/lessons/clean-javascript-with-browserify
+- https://laracasts.com/lessons/laravel-and-gulp
+
 ####Try more and have fun !!! :smile: :smile: :smile: :thumbsup:
