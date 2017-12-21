@@ -1,7 +1,7 @@
 # gulp-step-by-step
 Learn basics of gulp step by step.
 
-###Important gulp functions
+### Important gulp functions
 - `gulp.task`: Define a task.
 - `gulp.src`: Source of files(input).
 - `gulp.dest`: Output location of the files resulted from process(es).
